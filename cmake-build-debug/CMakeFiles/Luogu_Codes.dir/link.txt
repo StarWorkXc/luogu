@@ -1,0 +1,3 @@
+"D:\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Luogu_Codes.dir/objects.a
+C:\PROGRA~2\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\Luogu_Codes.dir/objects.a @CMakeFiles\Luogu_Codes.dir\objects1.rsp
+C:\PROGRA~2\Dev-Cpp\MinGW64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\Luogu_Codes.dir/objects.a -Wl,--no-whole-archive  -o Luogu_Codes.exe -Wl,--out-implib,libLuogu_Codes.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Luogu_Codes.dir\linklibs.rsp
