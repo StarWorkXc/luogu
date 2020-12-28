@@ -156,6 +156,19 @@ P1083/fast:
 .PHONY : P1083/fast
 
 #=============================================================================
+# Target rules for targets named P1208
+
+# Build rule for target.
+P1208: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 P1208
+.PHONY : P1208
+
+# fast build rule for target.
+P1208/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P1208.dir\build.make CMakeFiles/P1208.dir/build
+.PHONY : P1208/fast
+
+#=============================================================================
 # Target rules for targets named P1314
 
 # Build rule for target.
@@ -194,6 +207,33 @@ P1083.s: P1083.cpp.s
 P1083.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\P1083.dir\build.make CMakeFiles/P1083.dir/P1083.cpp.s
 .PHONY : P1083.cpp.s
+
+P1208.obj: P1208.cpp.obj
+
+.PHONY : P1208.obj
+
+# target to build an object file
+P1208.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P1208.dir\build.make CMakeFiles/P1208.dir/P1208.cpp.obj
+.PHONY : P1208.cpp.obj
+
+P1208.i: P1208.cpp.i
+
+.PHONY : P1208.i
+
+# target to preprocess a source file
+P1208.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P1208.dir\build.make CMakeFiles/P1208.dir/P1208.cpp.i
+.PHONY : P1208.cpp.i
+
+P1208.s: P1208.cpp.s
+
+.PHONY : P1208.s
+
+# target to generate assembly for a file
+P1208.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P1208.dir\build.make CMakeFiles/P1208.dir/P1208.cpp.s
+.PHONY : P1208.cpp.s
 
 P1314.obj: P1314.cpp.obj
 
@@ -258,11 +298,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... P1083
+	@echo ... P1208
 	@echo ... P1314
 	@echo ... P1429
 	@echo ... P1083.obj
 	@echo ... P1083.i
 	@echo ... P1083.s
+	@echo ... P1208.obj
+	@echo ... P1208.i
+	@echo ... P1208.s
 	@echo ... P1314.obj
 	@echo ... P1314.i
 	@echo ... P1314.s
